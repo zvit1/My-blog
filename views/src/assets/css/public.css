@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /*background-image: url('../background-image-min.jpg');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inline-block {
+  display: inline-block;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+.text-light-blue {
+  color: #58B7FF;
+}
+.text-blue {
+  color: #20A0FF;
+}
+.text-dark-blue {
+  color: #1D8CE0;
+}
+.text-success {
+  color: #13CE66;
+}
+.text-warning {
+  color: #F7BA2A;
+}
+.text-danger {
+  color: #FF4949;
+}
+.text-black {
+  color: #1F2D3D;
+}
+.text-light-black {
+  color: #324057;
+}
+.text-exrta-light-black {
+  color: #475669;
+}
+.text-silver {
+  color: #8492A6;
+}
+.text-light-silver {
+  color: #99A9BF;
+}
+.text-extra-light-silver {
+  color: #C0CCDA;
+}
+.text-gray {
+  color: #D3DCE6;
+}
+.text-light-gray {
+  color: #E5E9F2;
+}
+.text-extra-light-gray {
+  color: #EFF2F7;
+}
+.text-dark-white {
+  color: #F9FAFC;
+}
+.text-white {
+  color: #FFFFFF;
+}
+.bg-light-blue {
+  background-color: #58B7FF;
+}
+.bg-blue {
+  background-color: #20A0FF;
+}
+.bg-dark-blue {
+  background-color: #1D8CE0;
+}
+.bg-success {
+  background-color: #13CE66;
+}
+.bg-warning {
+  background-color: #F7BA2A;
+}
+.bg-danger {
+  background-color: #FF4949;
+}
+.bg-black {
+  background-color: #1F2D3D;
+}
+.bg-light-black {
+  background-color: #324057;
+}
+.bg-exrta-light-black {
+  background-color: #475669;
+}
+.bg-silver {
+  background-color: #8492A6;
+}
+.bg-light-silver {
+  background-color: #99A9BF;
+}
+.bg-extra-light-silver {
+  background-color: #C0CCDA;
+}
+.bg-gray {
+  background-color: #D3DCE6;
+}
+.bg-light-gray {
+  background-color: #E5E9F2;
+}
+.bg-extra-light-gray {
+  background-color: #EFF2F7;
+}
+.bg-dark-white {
+  background-color: #F9FAFC;
+}
+.bg-white {
+  background-color: #FFFFFF;
+}
