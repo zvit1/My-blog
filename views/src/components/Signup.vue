@@ -103,7 +103,7 @@ export default {
       const context = this
       context.$refs[formName].validate((valid) => {
         if (valid) { // 如果表单信息有效
-          context.$http.post('http://localhost:3000/signup', {
+          context.$http.post('api/signup', {
             username: context.signData.username,
             nickname: context.signData.nickname,
             password: context.signData.pass,
