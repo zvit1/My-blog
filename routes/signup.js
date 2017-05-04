@@ -2,10 +2,11 @@ var sha1 = require('sha1')
 var express = require('express')
 var router = express.Router()
 
+var checkIsLogin = require('../middlewares/check').checkIsLogin
 var userManage = require('../models/users')
 
 // POST /signup 用户注册
-router.post('/', function (req, res, next) {
+router.post('/', checkIsLogin, function (req, res, next) {
   var username = req.body.username
   var nickname = req.body.nickname
   var password = req.body.password

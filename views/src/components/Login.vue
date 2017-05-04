@@ -56,11 +56,23 @@ export default {
   },
   methods: {
     submitForm (formName) {
+      const context = this
       this.$refs[formName].validate((valid) => {
+        // 如果验证为有效表单信息
         if (valid) {
-          alert('submit!')
+          context.$http.post('/api/login', {
+            username: context.loginData.username,
+            password: context.loginData.pass
+          }).then(response => {
+            if (response.body.resultCode !== '001') {
+              context.$toasted.error(response.body.resultContent)
+              return
+            }
+            context.$toasted.success(response.body.resultContent)
+            context.$router.push({ name: 'home' })
+          })
         } else {
-          console.log('error submit!!')
+          context.$toasted.error('无效的登录信息')
           return false
         }
       })
