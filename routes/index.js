@@ -1,5 +1,6 @@
 module.exports = function (app) {
   app.use('/api/signup', require('./signup'))
+  app.use('/api/signout', require('./signout'))
   app.use('/api/login', require('./login'))
 
   // 404 page

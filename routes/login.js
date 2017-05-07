@@ -53,7 +53,6 @@ router.post('/', checkIsLogin, function (req, res, next) {
       resultCode: '001',
       resultContent: '登录成功'
     })
-    res.redirect('/')
   }, function (err) {
     res.send({
       resultCode: '002',
